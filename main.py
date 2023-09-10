@@ -3,7 +3,7 @@ import datetime
 
 app = FastAPI()
 
-@app.get("/")
+@app.get("/api")
 async def read_item(
     slack_name: str = Query(default=None, description="Slack name"),
     track: str = Query(default=None, description="Track")):
